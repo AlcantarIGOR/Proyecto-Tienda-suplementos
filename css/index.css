@@ -1,0 +1,165 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; /* Fuente principal */
+}
+
+/* Estilos para el encabezado */
+header {
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho completo */
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center;
+    z-index: 100; /* Por encima de otros elementos */
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.150); /* Fondo semitransparente */
+}
+
+/* Estilos para el logo */
+.mylogo {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.navbar a:hover {
+    color: #09537D; /* Color al pasar el ratón por encima */
+}
+
+/* Estilos para los íconos de la barra de navegación */
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.icon-link {
+    margin-left: 10px;
+}
+
+/* Estilos para el mensaje de bienvenida */
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+/* Estilos para la sección de imágenes de productos */
+.imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card {
+    border-radius: 20px;
+    margin: 10px;
+    height: 300px;
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+    transition: .5s all ease; /* Transición suave */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover {
+    flex: 1 1 200px;
+    background-color: rgb(207, 207, 207); /* Color de fondo al pasar el ratón por encima */
+}
+
+/* Estilos para la sección de ventajas */
+.body2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.top1, .top2 {
+    margin-bottom: 50px;
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+}
+
+.top1 {
+    background-color: #f0f0f0;
+}
+
+.top2 {
+    background-color: #e0e0e0;
+}
+
+.top1 h3, .top2 h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+
+.top1 p, .top2 p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.150);
+    padding: 20px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}

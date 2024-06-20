@@ -1,0 +1,112 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para el encabezado */
+header {
+  position: fixed; /* Fija el encabezado en la parte superior de la página */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 20px;
+  padding-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  color: rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgba(0, 0, 0, 0.150); /* Fondo semi-transparente */
+}
+
+.mylogo {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: 1.1em;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.navbar a:hover {
+  color: #09537D; /* Color de hover en los enlaces de navegación */
+}
+
+.nav-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.icon-link {
+  margin-left: 10px;
+}
+
+/* Estilos para el contenedor de productos */
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas en el grid */
+  gap: 20px; /* Espacio entre los productos */
+  justify-items: center;
+}
+
+.producto {
+  background-color: #fff;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra del contenedor de producto */
+  text-align: center;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.producto .nombre {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.producto .descripcion {
+  font-size: 12px;
+  color: #6e6e6e;
+}
+
+.producto .precio {
+  font-size: 16px;
+  color: #3a3a3a;
+}
+
+.producto .botoncomprar {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 50px; /* Bordes redondeados */
+  border: 0;
+}
+
+/* Estilos para el total y el

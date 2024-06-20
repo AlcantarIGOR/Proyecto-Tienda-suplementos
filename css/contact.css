@@ -1,0 +1,174 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para el encabezado */
+header {
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(0, 0, 0, 0.150);
+}
+
+.mylogo {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.navbar a:hover {
+    color: #09537D;
+}
+
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.icon-link {
+    margin-left: 10px;
+}
+
+/* Estilos para la sección de contacto */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura al 100% del viewport */
+}
+
+.contact-container h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+/* Estilos para la sección de información de contacto */
+.contact-background {
+    width: 25%;
+    height: 100%;
+    background-color: rgb(82, 82, 255);
+    border-radius: none;
+    padding: 20px; 
+}
+
+.ubi, .celu, .correo {
+    width: 20px; /* Ajusta el ancho de los íconos */
+    height: auto; 
+    margin-right: 10px; 
+}
+
+.contact-background p {
+    margin-bottom: 10px; 
+    display: flex; 
+    align-items: center; 
+}
+
+/* Estilos para el formulario de contacto */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0; 
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.150);
+}
+
+.contact h2 {
+    margin-bottom: 20px; 
+}
+
+.contact input,
+.contact textarea {
+    margin-bottom: 15px; 
+    padding: 10px; 
+    width: 300px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(49, 49, 145);
+}
+
+.button:active {
+    background-color: aqua;
+}
+
+.Ticketenviado {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%); /* Centrado horizontal */
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
+    text-align: center;
+    z-index: 1000; /* Por encima de otros elementos */
+}
+
+
+
+
+/* Estilos para el pie de página */
+footer {
+    position: unset;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.150);
+    padding: 20px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
